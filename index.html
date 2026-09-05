@@ -652,40 +652,64 @@
       }
 
       /* ---- Company blocks (added for Trajector / Paytm) ---- */
-      .company-title {
-        font-family: "Syne", sans-serif;
-        font-size: 42px;
-        font-weight: 800;
-        line-height: 1.1;
-        letter-spacing: 0.5px;
-        margin: 0 0 6px;
+
+      /* Trajector wordmark, sized to sit alongside the Paytm logo */
+      .company-logo {
+        display: block;
+        width: 100%;
+        max-width: 380px;
+        height: auto;
+        margin: 18px auto 26px;
       }
 
       .company-meta {
         font-size: 14px;
         letter-spacing: 1px;
-        opacity: 0.6;
+        color: #fff;
         margin: 0 0 22px;
       }
 
       .stack-strip {
         font-size: 13px;
         line-height: 2;
-        opacity: 0.65;
+        color: #fff;
         margin-top: 18px;
       }
 
       .stack-strip span {
         display: inline-block;
-        border: 1px solid rgba(255, 255, 255, 0.18);
+        border: 1px solid rgba(255, 255, 255, 0.35);
         border-radius: 30px;
         padding: 2px 12px;
         margin: 0 6px 6px 0;
       }
 
+      /* small illustration above each project column */
+      .section-illus {
+        display: block;
+        width: 100%;
+        max-width: 190px;
+        height: 92px;
+        margin: 0 auto 16px;
+      }
+
+      /* project column heading */
+      .col-heading {
+        font-family: "Syne", sans-serif;
+        font-size: 20px;
+        font-weight: 700;
+        color: #fff;
+        margin: 0 0 12px;
+      }
+
+      /* breathing room between one company block and the next */
+      .company-gap {
+        margin-top: 130px;
+      }
+
       @media (max-width: 991px) {
-        .company-title {
-          font-size: 32px;
+        .company-gap {
+          margin-top: 70px;
         }
       }
     </style>
@@ -1117,12 +1141,19 @@
               >
                 <div class="elementor-widget-container">
                   <!--
-                    To use a logo image instead of the text title below:
-                    upload the logo through WP Media, then replace the two
-                    <p class="company-*"> lines with an <img> tag exactly like
-                    the Paytm one further down this page.
+                    Logo file: upload Trajector-Logo-Light.webp to
+                    /wp-content/uploads/2023/10/ (that folder already exists in
+                    the repo). It is the official logo recoloured for the dark
+                    theme - the navy is white, the red arrow is untouched.
                   -->
-                  <p class="company-title">Trajector</p>
+                  <img
+                    decoding="async"
+                    width="542"
+                    height="40"
+                    src="/wp-content/uploads/2023/10/Trajector-Logo-Light.webp"
+                    class="company-logo"
+                    alt="Trajector"
+                  />
                   <p class="company-meta">
                     Senior Software Engineer &nbsp;·&nbsp; Gurugram, India
                     &nbsp;·&nbsp; Aug 2024 &ndash; Present
@@ -1175,7 +1206,43 @@
                 data-widget_type="text-editor.default"
               >
                 <div class="elementor-widget-container">
-                  <h5>AI Document Intelligence</h5>
+                  <svg
+                    class="section-illus"
+                    viewBox="0 0 190 92"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                  >
+                    <rect
+                      x="26"
+                      y="10"
+                      width="72"
+                      height="72"
+                      rx="6"
+                      stroke="#ffffff"
+                      stroke-width="3"
+                    />
+                    <path
+                      d="M42 32h40M42 46h40M42 60h24"
+                      stroke="#ffffff"
+                      stroke-width="3"
+                      stroke-linecap="round"
+                    />
+                    <path
+                      d="M132 20l5 14 14 5-14 5-5 14-5-14-14-5 14-5 5-14z"
+                      stroke="#ffffff"
+                      stroke-width="3"
+                      stroke-linejoin="round"
+                    />
+                    <circle
+                      cx="160"
+                      cy="70"
+                      r="7"
+                      stroke="#ffffff"
+                      stroke-width="3"
+                    />
+                  </svg>
+                  <h5 class="col-heading">AI Document Intelligence</h5>
                   ⊛ LangChain pipeline that classifies incoming documents
                   automatically<br />
                   ⊛ Categorises by client, document type and checklist item, and
@@ -1200,7 +1267,34 @@
                 data-widget_type="text-editor.default"
               >
                 <div class="elementor-widget-container">
-                  <h5>Identity Re-architecture</h5>
+                  <svg
+                    class="section-illus"
+                    viewBox="0 0 190 92"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M95 8l36 13v23c0 21-15 34-36 40-21-6-36-19-36-40V21L95 8z"
+                      stroke="#ffffff"
+                      stroke-width="3"
+                      stroke-linejoin="round"
+                    />
+                    <circle
+                      cx="95"
+                      cy="44"
+                      r="8"
+                      stroke="#ffffff"
+                      stroke-width="3"
+                    />
+                    <path
+                      d="M95 52v14"
+                      stroke="#ffffff"
+                      stroke-width="3"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                  <h5 class="col-heading">Identity Re-architecture</h5>
                   ⊛ Re-architected identity management for a core product
                   dashboard onto AWS Cognito<br />
                   ⊛ Wrote and presented the ADRs, backed by C4 and sequence
@@ -1226,7 +1320,44 @@
                 data-widget_type="text-editor.default"
               >
                 <div class="elementor-widget-container">
-                  <h5>Design-to-Code R&amp;D</h5>
+                  <svg
+                    class="section-illus"
+                    viewBox="0 0 190 92"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                  >
+                    <rect
+                      x="12"
+                      y="20"
+                      width="58"
+                      height="52"
+                      rx="6"
+                      stroke="#ffffff"
+                      stroke-width="3"
+                    />
+                    <path
+                      d="M12 36h58"
+                      stroke="#ffffff"
+                      stroke-width="3"
+                    />
+                    <circle cx="24" cy="28" r="3" fill="#ffffff" />
+                    <path
+                      d="M84 46h24M102 38l8 8-8 8"
+                      stroke="#ffffff"
+                      stroke-width="3"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M144 30l-14 16 14 16M166 30l14 16-14 16"
+                      stroke="#ffffff"
+                      stroke-width="3"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  <h5 class="col-heading">Design-to-Code R&amp;D</h5>
                   ⊛ Research POC standardising how the team converts design into
                   code with AI tooling<br />
                   ⊛ Evaluated the Figma plugin for Claude and the Claude Design →
@@ -1252,7 +1383,35 @@
                 data-widget_type="text-editor.default"
               >
                 <div class="elementor-widget-container">
-                  <h5>Quality &amp; Performance</h5>
+                  <svg
+                    class="section-illus"
+                    viewBox="0 0 190 92"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                  >
+                    <path
+                      d="M24 70a44 44 0 0 1 88 0"
+                      stroke="#ffffff"
+                      stroke-width="3"
+                      stroke-linecap="round"
+                    />
+                    <path
+                      d="M68 70l26-25"
+                      stroke="#ffffff"
+                      stroke-width="3"
+                      stroke-linecap="round"
+                    />
+                    <circle cx="68" cy="70" r="5" fill="#ffffff" />
+                    <path
+                      d="M138 46l9 10 18-20"
+                      stroke="#ffffff"
+                      stroke-width="3"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  <h5 class="col-heading">Quality &amp; Performance</h5>
                   ⊛ Built the team&#8217;s automation practice from zero, with no
                   dedicated automation engineer<br />
                   ⊛ Playwright end-to-end coverage to ~90%, wired into CI/CD<br />
@@ -1269,7 +1428,7 @@
 
       <!-- ============ PAYTM ============ -->
       <section
-        class="elementor-section elementor-top-section elementor-element elementor-element-ptm001 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+        class="elementor-section elementor-top-section elementor-element elementor-element-ptm001 elementor-section-boxed elementor-section-height-default elementor-section-height-default company-gap"
         data-id="ptm001"
         data-element_type="section"
       >
@@ -1429,6 +1588,7 @@
                 data-widget_type="text-editor.default"
               >
                 <div class="elementor-widget-container">
+                  <h5 class="col-heading">Fastag</h5>
                   <p>
                     ⊛ Worked in the Fastag vertical<br />⊛ Managed and developed
                     three dashboards for Fastag operations<br />⊛ Played a
@@ -1475,6 +1635,7 @@
                 data-widget_type="text-editor.default"
               >
                 <div class="elementor-widget-container">
+                  <h5 class="col-heading">Field Service Management</h5>
                   ⊛ Worked in the Field Service Management vertical<br />
                   ⊛ Successfully managed the Paytm Service Agent App<br />
                   ⊛ Worked on performance enhancements, bug fixing, and new
@@ -1498,7 +1659,50 @@
                 data-widget_type="text-editor.default"
               >
                 <div class="elementor-widget-container">
-                  <h5>Onboarding Engine</h5>
+                  <svg
+                    class="section-illus"
+                    viewBox="0 0 190 92"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true"
+                  >
+                    <circle
+                      cx="52"
+                      cy="28"
+                      r="13"
+                      stroke="#ffffff"
+                      stroke-width="3"
+                    />
+                    <path
+                      d="M28 76c0-13 11-23 24-23s24 10 24 23"
+                      stroke="#ffffff"
+                      stroke-width="3"
+                      stroke-linecap="round"
+                    />
+                    <rect
+                      x="104"
+                      y="12"
+                      width="60"
+                      height="68"
+                      rx="6"
+                      stroke="#ffffff"
+                      stroke-width="3"
+                    />
+                    <path
+                      d="M116 34l6 6 13-14"
+                      stroke="#ffffff"
+                      stroke-width="3"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                    <path
+                      d="M116 56h38M116 68h26"
+                      stroke="#ffffff"
+                      stroke-width="3"
+                      stroke-linecap="round"
+                    />
+                  </svg>
+                  <h5 class="col-heading">Onboarding Engine</h5>
                   ⊛ Worked in the merchant Onboarding Engine vertical<br />
                   ⊛ Optimised core web vitals across the onboarding dashboard<br />
                   ⊛ Improved speed, security and overall efficiency by ~50%<br />
@@ -1542,6 +1746,7 @@
                 data-widget_type="text-editor.default"
               >
                 <div class="elementor-widget-container">
+                  <h5 class="col-heading">Exit Management</h5>
                   ⊛ Digitised the employee exit process from scratch<br />
                   ⊛ Curbed ~110 million rupees in annual losses<br />
                   ⊛ Reduced absconding churn rate by ~30%<br />
