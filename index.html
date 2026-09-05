@@ -655,24 +655,33 @@
 
       /* Trajector wordmark, sized to sit alongside the Paytm logo */
       .company-logo {
-        display: block;
-        width: 100%;
-        max-width: 380px;
-        height: auto;
-        margin: 18px auto 26px;
+        display: block !important;
+        width: auto !important;
+        max-width: 300px !important;
+        height: auto !important;
+        margin: 18px auto 22px !important;
+      }
+
+      /* copy inside the company + project blocks stays white, not grey */
+      .elementor-85 .elementor-widget-text-editor,
+      .elementor-85 .elementor-widget-text-editor p,
+      .elementor-85 .elementor-widget-text-editor .elementor-widget-container {
+        color: #fff;
       }
 
       .company-meta {
+        display: block;
+        text-align: center;
         font-size: 14px;
         letter-spacing: 1px;
-        color: #fff;
-        margin: 0 0 22px;
+        color: #fff !important;
+        margin: 0 0 26px;
       }
 
       .stack-strip {
         font-size: 13px;
         line-height: 2;
-        color: #fff;
+        color: #fff !important;
         margin-top: 18px;
       }
 
@@ -694,11 +703,11 @@
       }
 
       /* project column heading */
-      .col-heading {
+      .elementor-85 h5.col-heading {
         font-family: "Syne", sans-serif;
         font-size: 20px;
         font-weight: 700;
-        color: #fff;
+        color: #fff !important;
         margin: 0 0 12px;
       }
 
