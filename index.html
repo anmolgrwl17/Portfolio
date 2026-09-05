@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Anmol Agarwal — Senior Software Engineer building full stack products and AI-powered systems. Currently at Trajector, previously Paytm."
+    />
     <link
       rel="shortcut icon"
       href="/wp-content/uploads/2023/07/infinite-favicon.webp"
@@ -646,6 +650,44 @@
       .header-view-on-mobile {
         display: none;
       }
+
+      /* ---- Company blocks (added for Trajector / Paytm) ---- */
+      .company-title {
+        font-family: "Syne", sans-serif;
+        font-size: 42px;
+        font-weight: 800;
+        line-height: 1.1;
+        letter-spacing: 0.5px;
+        margin: 0 0 6px;
+      }
+
+      .company-meta {
+        font-size: 14px;
+        letter-spacing: 1px;
+        opacity: 0.6;
+        margin: 0 0 22px;
+      }
+
+      .stack-strip {
+        font-size: 13px;
+        line-height: 2;
+        opacity: 0.65;
+        margin-top: 18px;
+      }
+
+      .stack-strip span {
+        display: inline-block;
+        border: 1px solid rgba(255, 255, 255, 0.18);
+        border-radius: 30px;
+        padding: 2px 12px;
+        margin: 0 6px 6px 0;
+      }
+
+      @media (max-width: 991px) {
+        .company-title {
+          font-size: 32px;
+        }
+      }
     </style>
     <style title="dynamic-css" class="options-output">
       body {
@@ -842,24 +884,8 @@
                         <div class="col-md-12">
                           <div class="header-section-wrap">
                             <div class="header-view-on-mobile">
-                              <h1>
-                                <br />
-                                <b>Warning</b>: Undefined variable $item in
-                                <b
-                                  >/Users/anmol/Local
-                                  Sites/anmols-portfolio/app/public/wp-content/plugins/nils-elementor/widgets/slider-widget.php</b
-                                >
-                                on line <b>258</b><br />
-                                <br />
-                                <b>Warning</b>: Trying to access array offset on
-                                value of type null in
-                                <b
-                                  >/Users/anmol/Local
-                                  Sites/anmols-portfolio/app/public/wp-content/plugins/nils-elementor/widgets/slider-widget.php</b
-                                >
-                                on line <b>258</b><br />
-                              </h1>
-                              <h6>Full Stack Developer</h6>
+                              <h1>Anmol Agarwal</h1>
+                              <h6>Senior Software Engineer &mdash; Full Stack &amp; AI</h6>
                             </div>
                             <div class="transform-banner position-relative">
                               <img
@@ -875,7 +901,7 @@
                               >
                                 <div class="header-not-view-on-mobile">
                                   <h1>Anmol Agarwal</h1>
-                                  <h6>Full Stack Developer</h6>
+                                  <h6>Senior Software Engineer &mdash; Full Stack &amp; AI</h6>
                                 </div>
                                 <div class="header-cont-text">
                                   <p class="wow" data-splitting>
@@ -949,7 +975,7 @@
                       <div class="row mb-45">
                         <div class="col-md-4">
                           <h6 class="wow" data-splitting>
-                            Solutions Tailored to Your Needs
+                            What I Build
                           </h6>
                           <h1 class="wow" data-splitting>Services</h1>
                         </div>
@@ -961,15 +987,16 @@
                             <div class="item">
                               <a href="#">
                                 <span class="icon et-genius"></span>
-                                <h5>Frontend Development</h5>
+                                <h5>AI &amp; LLM Integration</h5>
                                 <p>
-                                  Frontend development encompasses HTML, CSS,
-                                  JavaScript, &amp; frameworks like React &amp;
-                                  WordPress, allowing frontend developers to
-                                  create intuitive, visually appealing, &amp;
-                                  interactive websites &amp; web applications
-                                  that captivate users &amp; enhance their
-                                  online experience.
+                                  Building production systems on top of language
+                                  models &mdash; document classification and
+                                  extraction pipelines with LangChain, AI agents,
+                                  retrieval workflows, and integrations with the
+                                  Anthropic Claude and OpenAI APIs, including MCP.
+                                  I focus on where a model genuinely earns its
+                                  place, and where a simpler rule is cheaper and
+                                  more reliable.
                                 </p>
                                 <div class="numb">01</div>
                               </a>
@@ -977,44 +1004,43 @@
                             <div class="item">
                               <a href="#">
                                 <span class="icon et-gears"></span>
-                                <h5>Backend Development</h5>
+                                <h5>Full Stack Product Engineering</h5>
                                 <p>
-                                  Backend development with Node.js and Express
-                                  involves building server-side applications.
-                                  Databases like MongoDB and SQL are utilized to
-                                  store and manage data, enabling efficient
-                                  retrieval and manipulation for web
-                                  applications.
+                                  End-to-end feature delivery across React, Next.js
+                                  and TypeScript on the front, Node, Express and
+                                  Python behind it, and MongoDB or SQL underneath.
+                                  Comfortable owning a feature from the first
+                                  conversation with product through release and the
+                                  support that follows.
                                 </p>
                                 <div class="numb">02</div>
                               </a>
                             </div>
                             <div class="item">
                               <a href="#">
-                                <span class="icon et-mobile"></span>
-                                <h5>Website Development</h5>
+                                <span class="icon et-layers"></span>
+                                <h5>Architecture &amp; Technical Design</h5>
                                 <p>
-                                  Website and application development involves
-                                  creating and enhancing digital solutions. I
-                                  specialize in designing responsive websites
-                                  and developing robust applications, ensuring
-                                  optimal user experience, functionality, and
-                                  scalability for diverse business needs.
+                                  Writing and presenting ADRs, C4 and sequence
+                                  diagrams, and specs that hold up across time
+                                  zones. I have taken high-risk changes &mdash;
+                                  replacing a live product&#8217;s auth layer, for
+                                  one &mdash; from proposal through approval to
+                                  delivery with distributed teams.
                                 </p>
                                 <div class="numb">03</div>
                               </a>
                             </div>
                             <div class="item">
                               <a href="#">
-                                <span class="icon et-layers"></span>
-                                <h5>Database Management</h5>
+                                <span class="icon et-browser"></span>
+                                <h5>Frontend &amp; Performance Engineering</h5>
                                 <p>
-                                  Database management involves efficiently
-                                  organizing, storing, and retrieving data. I
-                                  have experience with MongoDB and MariaDB, as
-                                  well as working with PHPMyAdmin and SQL for
-                                  seamless data management, security, and
-                                  performance optimization.
+                                  Core web vitals, bundle size, render performance
+                                  and the unglamorous work that makes a consumer
+                                  product feel fast. Includes production issue
+                                  triage with Sentry and close collaboration with
+                                  design on the interfaces people actually touch.
                                 </p>
                                 <div class="numb">04</div>
                               </a>
@@ -1022,29 +1048,26 @@
                             <div class="item">
                               <a href="#">
                                 <span class="icon et-tools-2"></span>
-                                <h5>Website Fixes</h5>
+                                <h5>Test Automation &amp; CI/CD</h5>
                                 <p>
-                                  Website fixes involve troubleshooting and
-                                  resolving issues such as broken links, layout
-                                  problems, performance optimization, security
-                                  vulnerabilities, and ensuring cross-browser
-                                  compatibility to maintain a seamless and
-                                  user-friendly online presence.
+                                  End-to-end test suites in Playwright, load and
+                                  performance testing with JMeter, and pipelines
+                                  that run them where they matter. I have built a
+                                  team&#8217;s automation practice from zero and
+                                  supported it after handing it on.
                                 </p>
                                 <div class="numb">05</div>
                               </a>
                             </div>
                             <div class="item">
                               <a href="#">
-                                <span class="icon et-browser"></span>
-                                <h5>Website Revamp</h5>
+                                <span class="icon et-mobile"></span>
+                                <h5>Data &amp; Database Engineering</h5>
                                 <p>
-                                  Website revamp involves giving a fresh look
-                                  and feel to an existing website. I specialize
-                                  in redesigning user interfaces, improving user
-                                  experience, optimizing performance, and
-                                  incorporating modern design trends to enhance
-                                  the overall website appeal and functionality.
+                                  Schema design, query optimization and data
+                                  modelling across MongoDB and SQL, with AWS
+                                  services around it. Structuring data so the
+                                  application on top stays fast as it grows.
                                 </p>
                                 <div class="numb">06</div>
                               </a>
@@ -1060,6 +1083,8 @@
           </div>
         </div>
       </section>
+
+      <!-- ============ TRAJECTOR ============ -->
       <section
         class="elementor-section elementor-top-section elementor-element elementor-element-6c0ad0a elementor-section-boxed elementor-section-height-default elementor-section-height-default"
         data-id="6c0ad0a"
@@ -1084,6 +1109,177 @@
                   </h3>
                 </div>
               </div>
+              <div
+                class="elementor-element elementor-element-trj001 elementor-widget elementor-widget-text-editor"
+                data-id="trj001"
+                data-element_type="widget"
+                data-widget_type="text-editor.default"
+              >
+                <div class="elementor-widget-container">
+                  <!--
+                    To use a logo image instead of the text title below:
+                    upload the logo through WP Media, then replace the two
+                    <p class="company-*"> lines with an <img> tag exactly like
+                    the Paytm one further down this page.
+                  -->
+                  <p class="company-title">Trajector</p>
+                  <p class="company-meta">
+                    Senior Software Engineer &nbsp;·&nbsp; Gurugram, India
+                    &nbsp;·&nbsp; Aug 2024 &ndash; Present
+                  </p>
+                  <p>
+                    Trajector works in the veteran disability benefits space in
+                    the US, helping veterans build the medical evidence behind
+                    their VA claims. In engineering terms that means document
+                    workflow at real scale, under real deadlines &mdash; how fast
+                    a packet comes together directly affects how fast a
+                    veteran&#8217;s claim moves.
+                  </p>
+                  <p>
+                    I work across the B2B and BK platforms &mdash; frontend,
+                    backend APIs and system integrations &mdash; with a growing
+                    focus on AI-powered document intelligence, architecture, and
+                    the developer tooling the team builds with. I also mentor and
+                    onboard engineers, and drive spec-driven development to cut
+                    ambiguity out of delivery.
+                  </p>
+                  <p class="stack-strip">
+                    <span>React</span><span>Next.js</span><span>TypeScript</span
+                    ><span>Node.js</span><span>Python</span><span>MongoDB</span
+                    ><span>AWS</span><span>LangChain</span><span>MCP</span
+                    ><span>Claude &amp; OpenAI APIs</span><span>Playwright</span
+                    ><span>JMeter</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        class="elementor-section elementor-top-section elementor-element elementor-element-trj100 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+        data-id="trj100"
+        data-element_type="section"
+      >
+        <div class="elementor-container elementor-column-gap-default">
+          <div
+            class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-trj101"
+            data-id="trj101"
+            data-element_type="column"
+          >
+            <div class="elementor-widget-wrap elementor-element-populated">
+              <div
+                class="elementor-element elementor-element-trj102 elementor-widget elementor-widget-text-editor"
+                data-id="trj102"
+                data-element_type="widget"
+                data-widget_type="text-editor.default"
+              >
+                <div class="elementor-widget-container">
+                  <h5>AI Document Intelligence</h5>
+                  ⊛ LangChain pipeline that classifies incoming documents
+                  automatically<br />
+                  ⊛ Categorises by client, document type and checklist item, and
+                  flags internal or confidential material<br />
+                  ⊛ Detects incomplete submissions and triggers resubmission
+                  reminders instead of letting a packet stall<br />
+                  ⊛ Accelerates packet completion and the downstream fax dispatch
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-trj103"
+            data-id="trj103"
+            data-element_type="column"
+          >
+            <div class="elementor-widget-wrap elementor-element-populated">
+              <div
+                class="elementor-element elementor-element-trj104 elementor-widget elementor-widget-text-editor"
+                data-id="trj104"
+                data-element_type="widget"
+                data-widget_type="text-editor.default"
+              >
+                <div class="elementor-widget-container">
+                  <h5>Identity Re-architecture</h5>
+                  ⊛ Re-architected identity management for a core product
+                  dashboard onto AWS Cognito<br />
+                  ⊛ Wrote and presented the ADRs, backed by C4 and sequence
+                  diagrams, and got them approved<br />
+                  ⊛ Delivered across India, Philippines and US teams &mdash;
+                  recognised for the cross-team collaboration<br />
+                  ⊛ Cut authentication infrastructure cost by ~97% (~$42K
+                  annually)
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-trj105"
+            data-id="trj105"
+            data-element_type="column"
+          >
+            <div class="elementor-widget-wrap elementor-element-populated">
+              <div
+                class="elementor-element elementor-element-trj106 elementor-widget elementor-widget-text-editor"
+                data-id="trj106"
+                data-element_type="widget"
+                data-widget_type="text-editor.default"
+              >
+                <div class="elementor-widget-container">
+                  <h5>Design-to-Code R&amp;D</h5>
+                  ⊛ Research POC standardising how the team converts design into
+                  code with AI tooling<br />
+                  ⊛ Evaluated the Figma plugin for Claude and the Claude Design →
+                  Claude Code export path<br />
+                  ⊛ Tuned for two things at once: output accuracy and token
+                  efficiency<br />
+                  ⊛ Documented as a team standard, so the same design produces the
+                  same quality of result
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-trj107"
+            data-id="trj107"
+            data-element_type="column"
+          >
+            <div class="elementor-widget-wrap elementor-element-populated">
+              <div
+                class="elementor-element elementor-element-trj108 elementor-widget elementor-widget-text-editor"
+                data-id="trj108"
+                data-element_type="widget"
+                data-widget_type="text-editor.default"
+              >
+                <div class="elementor-widget-container">
+                  <h5>Quality &amp; Performance</h5>
+                  ⊛ Built the team&#8217;s automation practice from zero, with no
+                  dedicated automation engineer<br />
+                  ⊛ Playwright end-to-end coverage to ~90%, wired into CI/CD<br />
+                  ⊛ JMeter performance testing to find bottlenecks and tune server
+                  performance<br />
+                  ⊛ Still the point of contact on approach after handing the
+                  practice on
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ PAYTM ============ -->
+      <section
+        class="elementor-section elementor-top-section elementor-element elementor-element-ptm001 elementor-section-boxed elementor-section-height-default elementor-section-height-default"
+        data-id="ptm001"
+        data-element_type="section"
+      >
+        <div class="elementor-container elementor-column-gap-default">
+          <div
+            class="elementor-column elementor-col-100 elementor-top-column elementor-element elementor-element-ptm002"
+            data-id="ptm002"
+            data-element_type="column"
+          >
+            <div class="elementor-widget-wrap elementor-element-populated">
               <div
                 class="elementor-element elementor-element-860f649 elementor-widget elementor-widget-image"
                 data-id="860f649"
@@ -1113,7 +1309,7 @@
                     height="225"
                     src="/wp-content/uploads/2023/07/Paytm_logo.png"
                     class="attachment-full size-full"
-                    alt=""
+                    alt="Paytm"
                     srcset="
                       /wp-content/uploads/2023/07/Paytm_logo.png         675w,
                       /wp-content/uploads/2023/07/Paytm_logo-300x100.png 300w
@@ -1165,14 +1361,25 @@
                       display: inline-block;
                     }
                   </style>
+                  <p class="company-meta">
+                    Software Engineer &nbsp;·&nbsp; Noida, India &nbsp;·&nbsp; Feb
+                    2021 &ndash; Aug 2024
+                  </p>
                   <p>
-                    Paytm, a leading digital payments and e-commerce platform,
-                    revolutionizes the way people transact and shop online. As a
-                    frontend developer at Paytm for over 3 years, I&#8217;ve
-                    contributed to various verticals including Fastag, Field
-                    Service Management, and Incentive, enhancing user
-                    experiences and driving innovation in the ever-evolving
-                    digital landscape.
+                    Paytm is India&#8217;s largest digital payments and commerce
+                    platform &mdash; payments, wallet, UPI, merchant services,
+                    FASTag and lending, at a scale most people here have used
+                    themselves. Over three and a half years I worked across three
+                    verticals under that umbrella &mdash; Fastag, Field Service
+                    Management and the Onboarding Engine &mdash; and built the
+                    employee Exit Management system from scratch.
+                  </p>
+                  <p>
+                    Because these are consumer-facing products, user experience and
+                    performance were never cosmetic. I collaborated closely with
+                    design on B2C interfaces, drove core web vitals and speed
+                    improvements, and spent real time in Sentry burning down
+                    production issues.
                   </p>
                 </div>
               </div>
@@ -1187,7 +1394,7 @@
       >
         <div class="elementor-container elementor-column-gap-default">
           <div
-            class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-471aede"
+            class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-471aede"
             data-id="471aede"
             data-element_type="column"
           >
@@ -1205,7 +1412,7 @@
                     height="200"
                     src="/wp-content/uploads/2023/07/Fastag-logo.png"
                     class="attachment-large size-large"
-                    alt=""
+                    alt="Paytm Fastag"
                     srcset="
                       /wp-content/uploads/2023/07/Fastag-logo.png         998w,
                       /wp-content/uploads/2023/07/Fastag-logo-300x67.png  300w,
@@ -1223,7 +1430,7 @@
               >
                 <div class="elementor-widget-container">
                   <p>
-                    ⊛ Worked in the Fastag vertical<br />⊛ Managed and developed
+                    ⊛ Worked in the Fastag vertical<br />⊛ Managed and developed
                     three dashboards for Fastag operations<br />⊛ Played a
                     pivotal role in enhancing Paytm mobile app&#8217;s Fastag
                     module<br />⊛ Delivered a seamless and efficient user
@@ -1234,7 +1441,7 @@
             </div>
           </div>
           <div
-            class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-eaa6dbe"
+            class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-eaa6dbe"
             data-id="eaa6dbe"
             data-element_type="column"
           >
@@ -1252,7 +1459,7 @@
                     height="174"
                     src="/wp-content/uploads/2023/07/FSM-logo.png"
                     class="attachment-large size-large"
-                    alt=""
+                    alt="Paytm Field Service Management"
                     srcset="
                       /wp-content/uploads/2023/07/FSM-logo.png         378w,
                       /wp-content/uploads/2023/07/FSM-logo-300x138.png 300w
@@ -1268,25 +1475,47 @@
                 data-widget_type="text-editor.default"
               >
                 <div class="elementor-widget-container">
-                  ⊛ Worked in the Field Service Management vertical<br />
-                  ⊛ Successfully managed the Paytm Service Agent App<br />
-                  ⊛ Worked on performance enhancements, bug fixing, and new
+                  ⊛ Worked in the Field Service Management vertical<br />
+                  ⊛ Successfully managed the Paytm Service Agent App<br />
+                  ⊛ Worked on performance enhancements, bug fixing, and new
                   developments<br />
-                  ⊛ Contributed to streamlined operations and improved user
+                  ⊛ Contributed to streamlined operations and improved user
                   experience
                 </div>
               </div>
             </div>
           </div>
           <div
-            class="elementor-column elementor-col-33 elementor-top-column elementor-element elementor-element-eaa6dbe"
-            data-id="eaa6dbe"
+            class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-ptm010"
+            data-id="ptm010"
             data-element_type="column"
           >
             <div class="elementor-widget-wrap elementor-element-populated">
               <div
-                class="elementor-element elementor-element-5313adb elementor-widget elementor-widget-image"
-                data-id="5313adb"
+                class="elementor-element elementor-element-ptm011 elementor-widget elementor-widget-text-editor"
+                data-id="ptm011"
+                data-element_type="widget"
+                data-widget_type="text-editor.default"
+              >
+                <div class="elementor-widget-container">
+                  <h5>Onboarding Engine</h5>
+                  ⊛ Worked in the merchant Onboarding Engine vertical<br />
+                  ⊛ Optimised core web vitals across the onboarding dashboard<br />
+                  ⊛ Improved speed, security and overall efficiency by ~50%<br />
+                  ⊛ Production issue triage and burn-down with Sentry
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="elementor-column elementor-col-25 elementor-top-column elementor-element elementor-element-ptm012"
+            data-id="ptm012"
+            data-element_type="column"
+          >
+            <div class="elementor-widget-wrap elementor-element-populated">
+              <div
+                class="elementor-element elementor-element-5313adc elementor-widget elementor-widget-image"
+                data-id="5313adc"
                 data-element_type="widget"
                 data-widget_type="image.default"
               >
@@ -1297,7 +1526,7 @@
                     height="200"
                     src="/wp-content/uploads/2023/10/Exit-Management.webp"
                     class="attachment-large size-large"
-                    alt=""
+                    alt="Exit Management"
                     srcset="
                       /wp-content/uploads/2023/10/Exit-Management.webp 378w,
                       /wp-content/uploads/2023/10/Exit-Management.webp 300w
@@ -1307,16 +1536,16 @@
                 </div>
               </div>
               <div
-                class="elementor-element elementor-element-87a3742 elementor-widget elementor-widget-text-editor"
-                data-id="87a3742"
+                class="elementor-element elementor-element-ptm013 elementor-widget elementor-widget-text-editor"
+                data-id="ptm013"
                 data-element_type="widget"
                 data-widget_type="text-editor.default"
               >
                 <div class="elementor-widget-container">
-                  ⊛ Digitzed the employee exit process from scratch<br />
-                  ⊛ Curbing ~110 million annual losses and reducing absconding
-                  churn rate of ~30%<br />
-                  ⊛ Resignation between different hierarchies
+                  ⊛ Digitised the employee exit process from scratch<br />
+                  ⊛ Curbed ~110 million rupees in annual losses<br />
+                  ⊛ Reduced absconding churn rate by ~30%<br />
+                  ⊛ Resignation flows across different hierarchies
                 </div>
               </div>
             </div>
